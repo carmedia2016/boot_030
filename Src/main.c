@@ -51,7 +51,7 @@ void SystemClock_Config(void);
 void MX_WWDG_Init(void);
 
 WWDG_HandleTypeDef hwwdg;
-
+// test for git
 int main(void)
 {
 		static U8 MTPConfVal=0;
