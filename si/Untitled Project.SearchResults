@@ -1,0 +1,19 @@
+---- UsartReceDevID Matches (20 in 2 files) ----
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                UsartFrameStruct->UsartReceDevID[0] = 0x00;
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                UsartFrameStruct->UsartReceDevID[1] = 0x00;
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                UsartFrameStruct->UsartReceDevID[2] = 0x00;
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                UsartFrameStruct->UsartReceDevID[3] = 0x00;
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                UsartFrameStruct->UsartReceDevID[4] = 0x00;
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                        UsartFrameStruct->UsartReceDevID[0] = UsartFrameStruct->UsartReceBuff[DevIDBaseAddr];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                        UsartFrameStruct->UsartReceDevID[1] = UsartFrameStruct->UsartReceBuff[DevIDBaseAddr+1];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                        UsartFrameStruct->UsartReceDevID[2] = UsartFrameStruct->UsartReceBuff[DevIDBaseAddr+2];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                        UsartFrameStruct->UsartReceDevID[3] = UsartFrameStruct->UsartReceBuff[DevIDBaseAddr+3];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                        UsartFrameStruct->UsartReceDevID[4] = UsartFrameStruct->UsartReceBuff[DevIDBaseAddr+4];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                if( (Usart2Frame.UsartReceDevID[0]==0XFF)&&(Usart2Frame.UsartReceDevID[1]==0XEE) 
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):                     &&(Usart2Frame.UsartReceDevID[2]==0XDD)&&(Usart2Frame.UsartReceDevID[3]==0XCC) )
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):    Usart2Frame.UsartSendBuff[4] = Usart2Frame.UsartReceDevID[0];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):    Usart2Frame.UsartSendBuff[5] = Usart2Frame.UsartReceDevID[1];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):    Usart2Frame.UsartSendBuff[6] = Usart2Frame.UsartReceDevID[2];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):    Usart2Frame.UsartSendBuff[7] = Usart2Frame.UsartReceDevID[3];
+User_Usart2.c (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):    Usart2Frame.UsartSendBuff[8] = Usart2Frame.UsartReceDevID[4];
+User_Usart2.h (e:\my\bms\shibao\4_bootloader\uartbootload(030)\app):    uint8_t  UsartReceDevID[5];

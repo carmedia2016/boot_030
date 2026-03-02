@@ -1,0 +1,1 @@
+stm32f0iapdemo_20171230a0\startup_stm32f030x8.o: startup_stm32f030x8.s
